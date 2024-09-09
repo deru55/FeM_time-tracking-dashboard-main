@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time tracking dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="dashboard">
+        <div class="dashboard__item dashboard__item--user | bg-neutral-3">
+          <div
+            class="dashboard__item--group | txt-neutral-1 bg-primary-5 grid-flow"
+          >
+            <img src="images/image-jeremy.png" alt="" />
+
+            <h2 class="span-2-md">
+              Report for <span class="fs-800 txt-white">Jeremy Robson</span>
+            </h2>
+          </div>
+
+          <div class="dashboard__timeframe | fw-400 txt-neutral-2">
+            <button class="btn selected" value="daily" data-timeframe="Day">
+              Daily
+            </button>
+
+            <button class="btn" value="weekly" data-timeframe="Week">
+              Weekly
+            </button>
+
+            <button class="btn" value="monthly" data-timeframe="Month">
+              Monthly
+            </button>
+          </div>
+        </div>
+
+        <div id="dashboard__group-items" class="dashboard__group-items"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
